@@ -10,8 +10,19 @@
 
 <body>
 
-                 <?php
-
+    <div class="container">
+        <h2>Tabla de platillos</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Disponible</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
                 require_once "conexion.php";
 
                 $sql = "SELECT * FROM newschema.platillos";
@@ -19,14 +30,17 @@
                 $resultados->execute(); 
 
                 while ($fila = $resultados->fetch(PDO::FETCH_OBJ)) {
-
-                    echo $fila->nombre."<br/>";
-
-
+                    echo "<tr>";
+                    echo "<td>".$fila->id."</td>";
+                    echo "<td>".$fila->nombre."</td>";
+                    echo "<td>".$fila->precio."</td>";
+                    echo "<td>".$fila->disponible."</td>";
+                    echo "</tr>";
                 }
-
                 ?>
-
+            </tbody>
+        </table>
+    </div>
 
 </body>
 
