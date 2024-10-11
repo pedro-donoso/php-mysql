@@ -1,9 +1,3 @@
-<?php
-
-require_once "conexion.php";
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,35 +10,23 @@ require_once "conexion.php";
 
 <body>
 
-    <div class="container">
-        <h2>Tabla de platillos</h2>
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nombre</th>
-                    <th>Precio</th>
-                    <th>Disponible</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
+                 <?php
 
-                $resultado = $conexion->query("SELECT * FROM newschema.platillos");
+                require_once "conexion.php";
 
-                while ($row = mysqli_fetch_array($resultado)) {
-                    echo "<tr>";
-                    echo "<td>" . $row["id"] . "</td>";
-                    echo "<td>" . $row["nombre"] . "</td>";
-                    echo "<td>" . $row["precio"] . "</td>";
-                    echo "<td>" . $row["disponible"] . "</td>";
-                    echo "<tr/>";
+                $sql = "SELECT * FROM newschema.platillos";
+                $resultados = $conexion->query($sql);
+                $resultados->execute(); 
+
+                while ($fila = $resultados->fetch(PDO::FETCH_OBJ)) {
+
+                    echo $fila->nombre."<br/>";
+
+
                 }
 
                 ?>
-            </tbody>
-        </table>
-    </div>
+
 
 </body>
 
