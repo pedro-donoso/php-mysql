@@ -24,10 +24,11 @@
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nombre del cliente</th>
-                    <th>Fecha de reservación</th>
-                    <th>Hora de reservación</th>
-                    <th>Número de personas</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Hora</th>
+                    <th>Fecha</th>
+                    <th>Cantidad Mesa</th>
                 </tr>
             </thead>
             <tbody>
@@ -41,10 +42,11 @@
                 while ($fila = $resultados->fetch(PDO::FETCH_OBJ)) {
                     echo "<tr>";
                     echo "<td>" . $fila->id . "</td>";
-                    echo "<td>" . $fila->nombre_cliente . "</td>";
-                    echo "<td>" . $fila->fecha_reservacion . "</td>";
-                    echo "<td>" . $fila->hora_reservacion . "</td>";
-                    echo "<td>" . $fila->numero_personas . "</td>";
+                    echo "<td>" . $fila->nombre . "</td>";
+                    echo "<td>" . $fila->apellido . "</td>";
+                    echo "<td>" . $fila->hora . "</td>";
+                    echo "<td>" . $fila->fecha . "</td>";
+                    echo "<td>" . $fila->cantidadmesa . "</td>";
                     echo "</tr>";
                 }
                 ?>

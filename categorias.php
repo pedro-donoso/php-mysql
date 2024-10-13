@@ -17,9 +17,6 @@
     <p>Aquí puedes encontrar nuestras categorías de platillos.</p>
 </div>
 
-
-
-
     <div class="container">
         <h2>Tabla de categorías</h2>
         <table class="table table-striped">
@@ -27,14 +24,13 @@
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
-                    <th>Descripción</th>
                 </tr>
             </thead>
             <tbody>
                 <?php
                 require_once "conexion.php";
 
-                $sql = "SELECT * FROM newschema.categorias";
+                $sql = "SELECT * FROM newschema.categoria";
                 $resultados = $conexion->query($sql);
                 $resultados->execute(); 
 
@@ -42,7 +38,6 @@
                     echo "<tr>";
                     echo "<td>".$fila->id."</td>";
                     echo "<td>".$fila->nombre."</td>";
-                    echo "<td>".$fila->descripcion."</td>";
                     echo "</tr>";
                 }
                 ?>
