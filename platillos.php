@@ -27,6 +27,7 @@
                     <th>Nombre</th>
                     <th>Precio</th>
                     <th>Disponible</th>
+                    <th>Categoria ID</th>
                 </tr>
             </thead>
             <tbody>
@@ -43,6 +44,7 @@
                     echo "<td>" . $fila->nombre . "</td>";
                     echo "<td>" . $fila->precio . "</td>";
                     echo "<td>" . $fila->disponible . "</td>";
+                    echo "<td>" . $fila->categoriaId . "</td>";
                     echo "</tr>";
                 }
                 ?>
