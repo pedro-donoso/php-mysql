@@ -10,9 +10,9 @@
 
 <body>
 
-    <?php include 'navbar.php'; ?>
+    <?php include './navbar/navbar.php'; ?>
 
-    <div class="container">
+    <div class="container my-3">
         <h1>Bienvenido a Restaurant</h1>
 
             <p>Esta es la página de inicio de nuestro restaurante. Puedes navegar por nuestras categorías, platillos y

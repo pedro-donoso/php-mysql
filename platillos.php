@@ -10,9 +10,9 @@
 
 <body>
 
-    <?php include 'navbar.php'; ?>
+    <?php include './navbar/navbar.php'; ?>
 
-    <div class="container">
+    <div class="container my-3">
         <h1>Platillos</h1>
         <p>Aquí puedes encontrar nuestros platillos.</p>
     </div>
@@ -32,7 +32,7 @@
             </thead>
             <tbody>
                 <?php
-                require_once "conexion.php";
+                require_once "./data/conexion.php";
 
                 $sql = "SELECT * FROM newschema.platillos";
                 $resultados = $conexion->query($sql);

@@ -10,9 +10,9 @@
 
 <body>
 
-    <?php include 'navbar.php'; ?>
+    <?php include './navbar/navbar.php'; ?>
 
-    <div class="container">
+    <div class="container my-3">
         <h1>Reservaciones</h1>
         <p>Aquí puedes hacer una reservación en nuestro restaurante.</p>
     </div>
@@ -33,7 +33,7 @@
             </thead>
             <tbody>
                 <?php
-                require_once "conexion.php";
+                require_once "./data/conexion.php";
 
                 $sql = "SELECT * FROM newschema.reservaciones";
                 $resultados = $conexion->query($sql);

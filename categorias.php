@@ -10,9 +10,9 @@
 
 <body>
 
-<?php include 'navbar.php'; ?>
+<?php include './navbar/navbar.php'; ?>
 
-<div class="container">
+<div class="container my-3">
     <h1>Categorías</h1>
     <p>Aquí puedes encontrar nuestras categorías de platillos.</p>
 </div>
@@ -28,7 +28,7 @@
             </thead>
             <tbody>
                 <?php
-                require_once "conexion.php";
+                require_once "./data/conexion.php";
 
                 $sql = "SELECT * FROM newschema.categoria";
                 $resultados = $conexion->query($sql);
@@ -48,7 +48,7 @@
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
-<script src="./bootstrap/bootstrap.bundle.min.js"></script>
+<script src="../bootstrap/bootstrap.bundle.min.js"></script>
 
 </body>
 
