@@ -1,0 +1,9 @@
+.tabla-platillos {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.tabla-reservaciones {
+    height: 400px;
+    overflow-y: auto;
+}

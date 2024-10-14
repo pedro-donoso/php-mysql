@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Platillos</title>
     <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
@@ -13,13 +14,11 @@
     <?php include './navbar/navbar.php'; ?>
 
     <div class="container my-3">
-        <h2>Platillos</h2>
+        <h2>Tabla Platillos</h2>
         <p>Aquí puedes encontrar nuestros platillos.</p>
     </div>
 
-
-    <div class="container">
-    <h3>Tabla de platillos</h3>
+    <div class="container tabla-platillos">
     <table class="table table-striped w-75">
         <thead>
             <tr>
