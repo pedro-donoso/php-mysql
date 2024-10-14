@@ -10,10 +10,10 @@
 
 <body>
 
-    <?php include 'navbar.php'; ?>
+    <?php include './navbar/navbar.php'; ?>
 
-    <div class="container">
-        <h1>Bienvenido a Restaurant</h1>
+    <div class="container my-3">
+        <h2>Bienvenido a Restaurant</h2>
 
             <p>Esta es la página de inicio de nuestro restaurante. Puedes navegar por nuestras categorías, platillos y
                 reservaciones haciendo clic en los enlaces de arriba.</p>
@@ -25,7 +25,5 @@
 <script src="./bootstrap/bootstrap.bundle.min.js"></script>  
 
 </body>
-
-
 
 </html>
