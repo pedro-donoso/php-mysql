@@ -14,7 +14,7 @@
     <?php include './navbar/navbar.php'; ?>
 
     <div class="container my-3">
-        <h2>Tabla Platillos</h2>
+        <h2>Platillos</h2>
         <p>Aquí puedes encontrar nuestros platillos.</p>
     </div>
 
