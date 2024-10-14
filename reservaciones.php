@@ -19,7 +19,7 @@
     </div>
 
     <div class="container tabla-reservaciones">
-        <table class="table table-striped w-75">
+        <table class="table table-striped">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -27,7 +27,7 @@
                     <th>Apellido</th>
                     <th>Hora</th>
                     <th>Fecha</th>
-                    <th>Cantidad Mesa</th>
+                    <th>Comensales</th>
                 </tr>
             </thead>
             <tbody>
