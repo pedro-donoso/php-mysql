@@ -13,14 +13,14 @@
     <?php include './navbar/navbar.php'; ?>
 
     <div class="container my-3">
-        <h1>Reservaciones</h1>
+        <h2>Reservaciones</h2>
         <p>Aquí puedes hacer una reservación en nuestro restaurante.</p>
     </div>
 
 
     <div class="container">
-        <h2>Tabla de reservaciones</h2>
-        <table class="table table-striped">
+        <h3>Tabla de reservaciones</h3>
+        <table class="table table-striped w-75">
             <thead>
                 <tr>
                     <th>ID</th>

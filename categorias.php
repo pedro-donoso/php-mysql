@@ -13,13 +13,13 @@
 <?php include './navbar/navbar.php'; ?>
 
 <div class="container my-3">
-    <h1>Categorías</h1>
+    <h2>Categorías</h2>
     <p>Aquí puedes encontrar nuestras categorías de platillos.</p>
 </div>
 
     <div class="container">
-        <h2>Tabla de categorías</h2>
-        <table class="table table-striped">
+        <h3>Tabla de categorías</h3>
+        <table class="table table-striped w-75">
             <thead>
                 <tr>
                     <th>ID</th>
