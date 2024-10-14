@@ -19,10 +19,7 @@
           <a class="nav-link" href="./reservaciones.php">Reservaciones</a>
         </li>       
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-success" type="submit">Search</button>
-      </form>
+
     </div>
   </div>
 </nav>
